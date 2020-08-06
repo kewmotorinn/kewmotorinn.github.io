@@ -1,0 +1,72 @@
+body { font-family: 'Open Sans', sans-serif; }
+.container-fluid { max-width: 1250px; }
+a { color: #ad5454; cursor: pointer; }
+	a:hover { color: #ad5454; text-decoration: none; }
+
+.kmiBanner { 
+	background: 
+  url('images/overlay-pattern.png') center/auto repeat,
+  url('images/skyline-room-nyc-1.jpg') center/cover no-repeat; min-height: 80vh; padding-top: 60px; padding-bottom: 60px; color: #FFF; text-shadow: 2px 2px 10px #000; }
+	.kmiBanner h1 { letter-spacing: 1px; font-size: 3.3rem; margin-top: 50px; margin-bottom: 32px; }
+	.kmiBanner h3 { line-height: 1.6; margin-top: 24px; }
+	.kmiBanner a { color: #FFF !important; }
+	
+	.socialLinks { margin-top: 50px; }
+	.socialLinks a .fab { font-size: 3rem; margin-left: 20px; margin-right: 20px; }
+	
+.kewFeatures { margin-bottom: 60px; }
+	.kewFeatures .fas { font-size: 3.2rem; color: #E7588B; margin-bottom: 20px; margin-top: 60px; }
+.kewFeaturesIcons { margin-bottom: 60px; }
+
+.kewPhotos a.card { text-decoration: none; color:#212529; transition: all 0.2s ease; }
+	.kewPhotos a.card:hover { cursor: pointer; border: 1px solid rgba(0,0,0,.45); }
+
+
+.myBtn { background-color: #ad5454; margin: 40px auto 100px; padding: 15px 40px; border-radius: 0; border:none !important; } 
+	.myBtn:hover { background-color: rgba(192,95,95,0.8); }
+
+.waydt { margin-bottom: 100px; }
+.waydt h2 { margin-bottom: 20px; }
+.waydt .embed-responsive { margin-bottom: 60px; }
+
+.twobytwo { display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr; margin-bottom: 60px; }
+.ktopleft { background-image: url('images/remote-e1455569997868.jpg'); background-position: center center; background-size: cover; }
+.kbottomright { background-image: url('images/kew-motor-inn-bar-restaurant.jpg'); background-position: center center; background-size: cover; }
+.ktopright, .kbottomleft { padding: 120px; background-color: #222; color: #FFF; }
+
+
+.kpress, .kdirections { margin-bottom: 60px; padding-top: 40px;}
+	.kpress h2, .kdirections h2 { margin-bottom: 30px; }
+
+
+.siteFooter { margin: 30px; font-size: 0.8em; }
+
+
+.uvtns { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; margin-top: 20px; }
+	.uvtns a,
+	.roomLook { border: 1px solid #e1e1e1; padding: 6px; transition: all 0.25s ease; }
+	.uvtns a img { transition: all 0.25s ease; }
+	.uvtns a img:hover,
+	.roomLook:hover { opacity: 0.8; }
+
+.clearRooms { clear: both; height: 40px; }
+
+@media screen and (max-width:950px){
+	.ktopright, .kbottomleft { padding: 80px 60px; }	
+}
+
+@media screen and (max-width:650px){
+	.twobytwo { grid-template-columns: 1fr; grid-template-rows: auto; }
+	.ktopleft { grid-row: 1 / 2; }
+	.ktopright { grid-row: 2 / 3; }
+	.kbottomright { grid-row: 3 / 4; }
+	.kbottomleft { grid-row: 4 / 5; }
+	.ktopright, .kbottomleft { padding: 80px 60px; }	
+	.ktopleft, .kbottomright { min-height: 250px; }
+}
+
+/* ===== < SM Screens ===== */
+@media screen and (max-width:575px){
+	.kewFeatures .fas { font-size: 2.8rem; margin-top: 40px; }
+	.kpress .col-sm-4 { margin-bottom: 40px; }
+}
